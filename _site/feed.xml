@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>一起跳舞</title>
+    <description></description>
+    <link>http://lwpann.github.io/</link>
+    <atom:link href="http://lwpann.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 11 Jun 2015 17:13:33 +0800</pubDate>
+    <lastBuildDate>Thu, 11 Jun 2015 17:13:33 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>初见-极限编程</title>
+        <description>&lt;p&gt;最近发现了一个叫&lt;a href=&quot;https://zh.wikipedia.org/wiki/极限编程&quot;&gt;极限编程&lt;/a&gt;的东西，很受启发，特记录下，以供日后常思与反省。首先它是一种软件工程方法学。极限编程的创始者是肯特·贝克、沃德·坎宁安和罗恩·杰弗里斯。肯特·贝克在1996年3月成为C3的项目负责人，开始对项目的开发方法学进行改善。他写了一本关于这个改善后的方法学的书，并且于1999年10月将之发行，这就是《极限编程解析》（2005第二版出版）。它不一定适合你的团队，但是它的一些理念在现在看来还是很具有指导意义的。本文旨在介绍极限编程和分享一些我对它的理解。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;Ⅰ 极限编程-目标&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;极限编程的主要目标在于降低因需求变更而带来的成本。&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+通常程序员最反感的就是频繁的需求变更，这会让整个项目的进度和开发变的不可控，甚至会毁了你花很多时间的精心设计。而极限编程的方法学会指导你如何应对变化。&lt;br /&gt;
+极限编程通过引入基本价值、原则、方法等概念来达到降低变更成本的目的。一个应用了极限编程方法的系统开发项目在应对需求变更时将显得更为灵活。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;ⅠⅠ 极限编程-价值标准&lt;/h2&gt;
+&lt;p&gt;极限编程技术以&lt;strong&gt;&lt;em&gt;沟通、简单、回馈、勇气和尊重&lt;/em&gt;&lt;/strong&gt;为价值标准。这是共识部分，但是大多数团队做的并不好，甚至没有共识或者价值标准，注意这不是企业文化。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;沟通&lt;/h3&gt;
+&lt;p&gt;极限编程技术可以被看成是在开发小组的成员之间迅速构建与传播制度上的认识的一种方法。它的目标是向所有开发人员提供一个对于系统的共享的视角，而这一视角又是与系统的最终用户的视角相吻合的。往往对抗的产生一般都是大家立场和视角不同，极限编程强调一种共识，大家的视角要是一致的，这就免去了很多时候的争吵。这也是【用户故事】的作用，它定义了我们的视角。极限编程鼓励用户、设计，开发小组成员之间交流的简单化，鼓励经常性的口头交流与回馈。但是有时候口头交流并不是项目开发中最高效的交流方式，有什么样的人民，就有什么样的政府。有什么样的成员，就有什么样的团队，这取决于你自己。取决于你的团队成员。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;简单&lt;/h3&gt;
+&lt;p&gt;极限编程鼓励从最简单的解决方式入手再通过不断重构达到更好的结果。这种方法与传统系统开发方式的不同之处在于，它只关注于对当前的需求来进行设计、编码，而不去理会明天、下周或者下个月会出现的需求。极限编程的拥护者承认这样的考虑是有缺陷的，即有时候在修改现有的系统以满足未来的需求时不得不付出更多的努力。然而他们主张“不对将来可能的需求上投入精力”所得到的好处可以弥补这一点，因为将来的需求在他们还没提出之前是很可能发生变化的。为了将来不确定的需求进行设计以及编码意味着在一些可能并不需要的方面浪费资源。而与之前提到的“交流”这一价值相关联来看，设计与代码上的简化可以提高交流的质量。一个由简单的编码实现的简单的设计可以更加容易得被小组中的每个程序员所理解。这是一个“度”的问题，简单到什么程度取决于团队的经验。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;反馈&lt;/h3&gt;
+&lt;p&gt;在极限编程中，“反馈”是和系统开发的很多不同方面相关联的：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;来自系统的反馈：通过编写单元测试，程序员能够很直观的得到经过修改后系统的状态。&lt;/li&gt;
+  &lt;li&gt;来自客户的反馈：功能性测试是由客户还有测试人员来编写的。他们能由此得知当前系统的状态。这样的评审一般计划2、3个礼拜进行一次，这样客户可以非常容易的了解、掌控开发的进度。&lt;/li&gt;
+  &lt;li&gt;来自小组的反馈：当客户带着新需求来参加项目计划会议时，小组可以直接对于实现新需求所需要的时间进行评估然后反馈给客户。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;反馈是与“交流”、“简单”这两条价值紧密联系的。为了沟通系统中的缺陷，可以通过编写单元测试，简单的证明某一段代码存在问题。来自系统的直接反馈信息将提醒程序员注意这一部分。用户可以以定义好的功能需求为依据，对系统进行周期性的测试。用Kent Beck的话来说：“编程中的乐观主义是危险的，而及时反馈则是解决它的方法。”&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;勇气&lt;/h3&gt;
+&lt;p&gt;极限编程理论中的“系统开发中的勇气”最好用一组实践来诠释。其中之一就是“只为今天的需求设计以及编码，不要考虑明天”这条戒律。这是努力避免陷入设计的泥潭、而在其他问题上花费了太多不必要的精力。勇气使得开发人员在需要重构他们的代码时能感到舒适。这意味着重新审查现有系统并完善它会使得以后出现的变化需求更容易被实现。另一个勇气的例子是了解什么时候应该完全丢弃现有的代码。每个程序员都有这样的经历：他们花了一整天的时间纠缠于自己设计和代码中的一个复杂的难题却无所得，而第二天回来以一个全新而清醒的角度来考虑，在半小时内就轻松解决了问题。同样这也是一个“度”的问题，需要灵活把握。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;尊重&lt;/h3&gt;
+&lt;p&gt;尊重的价值体现在很多方面。在极限编程中，团队成员间的互相尊重体现在每个人保证提交的任何改变不会导致编译无法通过、或者导致现有的测试案例失败、或者以其他方式导致工作延期。团队成员对于他们工作的尊重体现在他们总是坚持追求高质量，坚持通过重构的手段来为手头的工作找到最好的解决设计方案。这是很有必要的，大家一致同意通过的问题，就要遵守，如果异议一定要提出来，暗地搞破坏是很糟糕的事情。当然前提是一定要给团队成员说话的通道。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;Ⅲ 实践&lt;/h2&gt;
+&lt;p&gt;极限编程有12个核心实践：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;小规模回馈
+    &lt;ol&gt;
+      &lt;li&gt;测试驱动(Test-driven)&lt;/li&gt;
+      &lt;li&gt;计划博弈(Planning game)&lt;/li&gt;
+      &lt;li&gt;现场客户(On-site customer)&lt;/li&gt;
+      &lt;li&gt;结对编程(pair programming)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;反复性程序而不是批量的
+    &lt;ol&gt;
+      &lt;li&gt;代码重构（Refactoring)&lt;/li&gt;
+      &lt;li&gt;持续集成(Continuous integration)&lt;/li&gt;
+      &lt;li&gt;小型发布(Small releases)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;共同认识（共识）
+    &lt;ol&gt;
+      &lt;li&gt;简单设计(Simple design)&lt;/li&gt;
+      &lt;li&gt;系统隐喻(System Metaphor)&lt;/li&gt;
+      &lt;li&gt;代码规范(Coding standards)&lt;/li&gt;
+      &lt;li&gt;集体代码所有权(Collective ownership)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;程序员利益
+    &lt;ol&gt;
+      &lt;li&gt;恒定速路&lt;/li&gt;
+      &lt;li&gt;可反复性速率（每周40小时工作制 (40-hour week)）&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;计划博弈（计划游戏）&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;极限编程中对于任务的评估很有意思。它从价值排序和风险排序连个视角去做评估。这给了我一个全新的认识。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-9&quot;&gt;价值排序&lt;/h4&gt;
+&lt;p&gt;业务方按照商业价值为用户故事排序。它们会被分为三类：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;关键：没有这些故事系统无法运作或变得毫无意义。&lt;/li&gt;
+  &lt;li&gt;重要的商业价值：有重要业务价值的非关键用户故事。&lt;/li&gt;
+  &lt;li&gt;最好能有：并没有重要商业价值的用户故事；例如在可用性或用户界面上的改进。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-10&quot;&gt;风险排序&lt;/h4&gt;
+&lt;p&gt;程序员按照风险对用户故事进行排序。他／她们将用户故事的风险划分成三类：低、中、高。以下是这种方式的一个示例：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;决定风险索引：依照以下因素给每个用户故事一个0到2的索引：
+    &lt;ul&gt;
+      &lt;li&gt;完全度（我们是否已经了解所有的故事细节？）
+        &lt;ul&gt;
+          &lt;li&gt;完全  	（0）&lt;/li&gt;
+          &lt;li&gt;不完全	（1）&lt;/li&gt;
+          &lt;li&gt;未知  	（2）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;发散性（可能会发生变化吗？）
+        &lt;ul&gt;
+          &lt;li&gt;低（0）&lt;/li&gt;
+          &lt;li&gt;中（1）&lt;/li&gt;
+          &lt;li&gt;高（2）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;复杂度（是否难以建构？）
+        &lt;ul&gt;
+          &lt;li&gt;简单（0）&lt;/li&gt;
+          &lt;li&gt;标准（1）&lt;/li&gt;
+          &lt;li&gt;复杂（2）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;为每个用户故事增加所有这些索引后，给这些用户故事指定一个风险索引：低（0–1），中（2–4），高（5–6）。&lt;/p&gt;
+
+&lt;h4 id=&quot;pair-programming&quot;&gt;结对编程(pair programming)&lt;/h4&gt;
+&lt;p&gt;结对程序设计的意思是所有的代码都是由两个人坐在一台电脑前一起完成的。一个程序员控制电脑并且主要考虑编码细节。另外一个人主要关注整体结构，不断的对第一个程序员写的代码进行评审。&lt;/p&gt;
+
+&lt;p&gt;结对不是固定的：我们甚至建议程序员尽量交叉结对。这样，每个人都可以知道其它人的工作，每个人都对整个系统熟悉，结对程序设计加强了团队内的沟通。（这与代码集体所有制是息息相关的）。关于结对编程，&lt;a href=&quot;http://www.zhihu.com/question/19832735&quot;&gt;知乎上有一个帖子供参考&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h4 id=&quot;collective-ownership&quot;&gt;集体代码所有权(Collective ownership)&lt;/h4&gt;
+&lt;p&gt;集体所有制意味着每个人都对所有的代码负责；这一点，反过来又意味着每个人都可以更改代码的任意部分。结队程序设计对这一实践贡献良多：借由在不同的结队中工作，所有的程序员都能看到完全的代码。集体所有制的一个主要优势是提升了开发程序的速度，因为一旦代码中出现错误，任何程序员都能修正它。&lt;/p&gt;
+
+&lt;p&gt;在给予每个开发人员修改代码的权限的情况下，可能存在程序员引入错误的风险，他／她们知道自己在做什么，却无法预见某些依赖关系。完善的单元测试可以解决这个问题：如果未被预见的依赖产生了错误，那么当单元测试运行时，它必定会失败。这队开发人员的时间要求就比较高了，至少在每天的工作时间中，你要安排出时间来阅读代码。现在有很多工具可以帮你很好的阅读代码，比如gitlab，phabricator等，你甚至在阅读的时候对任意一行代码加上自己的批注和留言。这也相当于你间接的review了代码。&lt;/p&gt;
+
+&lt;h4 id=&quot;hour-week&quot;&gt;每周40小时工作制 (40-hour week)&lt;/h4&gt;
+&lt;p&gt;就不多说了……&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 05 Jun 2015 02:04:04 +0800</pubDate>
+        <link>http://lwpann.github.io/jekyll/update/2015/06/05/Extreme-programming.html</link>
+        <guid isPermaLink="true">http://lwpann.github.io/jekyll/update/2015/06/05/Extreme-programming.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;所有的我问所有的我&lt;/h2&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;怎么写&lt;/h1&gt;
+&lt;p&gt;写东西，到底是以记录的目的还是以传播的目的，我总是摇摆不定。&lt;/p&gt;
+
+&lt;p&gt;从传播的目的要写的很细致，怕别人看不懂，同时也可以分享关于自己的更多想法，更容易碰撞出火花。
+从记录的目的去写，我只要写的我看懂就行了。会很粗糙。不知道自己会不会以后也看不懂。不得而知，现在还停留在疑问阶段，等有了经验再回来补充心得。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;为什么写&lt;/h1&gt;
+&lt;p&gt;碰到好东西总是很有冲动去分享，但是有时候发现自己以为碰到的好东西并不是好东西，或者说是一堆烂东西里面只有那么一点的好东西。自己还没消化，剔除就分享出去太不负责任了。所以写下来，消化一下再排出去，可以让自己静下来仔细想想，仔细查查，利人利己。如果真有共产主义，我觉得最可能实现的地方就是互联网，开源。扯远了。&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 21 May 2015 02:08:49 +0800</pubDate>
+        <link>http://lwpann.github.io/jekyll/update/2015/05/21/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://lwpann.github.io/jekyll/update/2015/05/21/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
