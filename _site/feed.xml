@@ -5,8 +5,8 @@
     <description></description>
     <link>http://lwpann.github.io/</link>
     <atom:link href="http://lwpann.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 11 Jun 2015 17:13:33 +0800</pubDate>
-    <lastBuildDate>Thu, 11 Jun 2015 17:13:33 +0800</lastBuildDate>
+    <pubDate>Thu, 11 Jun 2015 17:36:31 +0800</pubDate>
+    <lastBuildDate>Thu, 11 Jun 2015 17:36:31 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -139,13 +139,11 @@
 
 </description>
         <pubDate>Fri, 05 Jun 2015 02:04:04 +0800</pubDate>
-        <link>http://lwpann.github.io/jekyll/update/2015/06/05/Extreme-programming.html</link>
-        <guid isPermaLink="true">http://lwpann.github.io/jekyll/update/2015/06/05/Extreme-programming.html</guid>
+        <link>http://lwpann.github.io/pan/2015/06/05/Extreme-programming.html</link>
+        <guid isPermaLink="true">http://lwpann.github.io/pan/2015/06/05/Extreme-programming.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>pan</category>
         
       </item>
     
