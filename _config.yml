@@ -2,9 +2,10 @@
 title: 一起跳舞 
 email: coderlwpan@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://lwpann.github.io" # the base hostname & protocol for your site
+url: "http://www.lwpan.com" # the base hostname & protocol for your site
 twitter_username: lwpan
 github_username:  lwpan
+weibo_name: coderlwpan
 
 # Build settings
 markdown: kramdown

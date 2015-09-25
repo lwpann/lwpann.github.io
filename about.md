@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
 
@@ -15,4 +15,3 @@ permalink: /about/
 专业造轮子红黑带一品，大自然的搬运工。
 
 专业无证厨师二级。
-
