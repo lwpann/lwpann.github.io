@@ -2,19 +2,18 @@
 layout: default
 ---
 
-<div class="home">
-  <ul class="post-list">
+<div class="content">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        {% capture y %}{{ post.date | date: "%Y"}}{%endcapture%}
+        {% if year != y %}
+            {% assign year = y %}
+            <h3 class="year">{{ year }}</h3>
+        {% endif %}
+        <ul class="article-list">
+            <li>
+                <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+                <a href="{{site.url}}{{post.url}}" title="{{ post.title }}">{{ post.title }}</a>
+            </li>
+        </ul>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">订阅 <a href="{{ "/feed.xml" | prepend: site.baseurl }}"> RSS</a></p>
 </div>
-

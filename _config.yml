@@ -1,11 +1,15 @@
 # Site settings
-title: 一起跳舞 
+title: lwPan
+nickname: lwPan
 email: coderlwpan@gmail.com
+description: code 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.lwpan.com" # the base hostname & protocol for your site
-twitter_username: lwpan
-github_username:  lwpan
-weibo_name: coderlwpan
+url: "http://localhost:4000/" # the base hostname & protocol for your site
+twitter_username: lwPan
+github_username: lwPan
 
 # Build settings
-markdown: kramdown
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
